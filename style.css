@@ -1,0 +1,270 @@
+html, body {
+  height: 100%;
+  width: 100%; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  position: realative;
+  color: white;
+  font-size: 16px; }
+
+.navbar-inverse {
+  background-color: #191919;
+  border-color: #080808; }
+
+.dropdown-menu {
+  background: #191919;
+  border-left: 3px solid #f2dd2a; }
+  .dropdown-menu > li > a {
+    color: white;
+    font-size: 16px;
+    transition: background 0.3s ease-in; }
+    .dropdown-menu > li > a:hover {
+      background: #f2dd2a; }
+
+.form-control {
+  background: none;
+  color: white; }
+  .form-control:focus {
+    box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px inset, #f2dd2a 0px 0px 8px;
+    border-color: #f2dd2a;
+    outline: 0px; }
+
+.btn-default {
+  background: none;
+  color: white; }
+  .btn-default:hover {
+    color: black;
+    background: #f2dd2a; }
+
+.discussion-tab {
+  text-align: center;
+  position: fixed;
+  width: 20%;
+  height: 7%;
+  padding: 6px;
+  bottom: -100%;
+  right: 3%;
+  border-left: 2px solid #f2dd2a;
+  border-right: 2px solid #f2dd2a;
+  border-top: 2px solid #f2dd2a;
+  z-index: 5;
+  background: #1a1919;
+  transition: 0.4s linear, bottom 0.7s ease-in; }
+  .discussion-tab h3 {
+    margin: 0; }
+  .discussion-tab p {
+    opacity: 0; }
+
+.animate {
+  bottom: 0; }
+
+.pullup {
+  height: 30%; }
+  .pullup p {
+    opacity: 1; }
+
+@keyframes slide-in-left {
+  from {
+    left: -30%; }
+  to {
+    left: 0; } }
+@keyframes slide-in-right {
+  from {
+    left: 20%; }
+  to {
+    left: 0; } }
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.landing-container {
+  height: 90vh;
+  position: relative;
+  width: 100%;
+  padding: 5%;
+  color: white;
+  background: url("https://cdn.wallpapersafari.com/87/9/mv7wkL.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .landing-container h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 100px;
+    position: relative;
+    z-index: 2;
+    font-weight: 300;
+    animation: slide-in-left 0.5s linear, fade-in 0.7s linear;
+    animation-delay: 0.5s;
+    margin-top: 8%; }
+  .landing-container p {
+    animation: fade-in 1s linear, slide-in-right 0.5s linear;
+    animation-delay: 0.4s;
+    position: relative;
+    z-index: 1;
+    font-size: 30px;
+    font-weight: 300;
+    width: 60%; }
+  .landing-container:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: -webkit-linear-gradient(bottom, #1a1919, rgba(25, 25, 25, 0.2)); }
+
+.container-div {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  min-height: 10vh;
+  background: #1a1919;
+  padding: 40px; }
+  .container-div .bar {
+    background: #f2dd2a;
+    width: 70%;
+    height: 5px;
+    margin: 0 auto 40px auto; }
+  .container-div p {
+    margin: 0 auto;
+    width: 90%; }
+  .container-div a {
+    color: white;
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+    text-decoration: none;
+    outline: none;
+    border: 2px solid white;
+    background: rgba(0, 0, 0, 0);
+    padding: 10px;
+    margin-top: 3%;
+    transition: background 0.3s linear; }
+    .container-div a:hover {
+      color: black;
+      background: white; }
+  .container-div hr {
+    width: 70%;
+    background: black;
+    height: 1px; }
+  .container-div h1 {
+    margin: 0 0 30px 0; }
+
+.coin-index {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3%;
+  color: black; }
+  .coin-index .index {
+    text-align: center;
+    flex: 1;
+    border-left: 2px solid black; }
+    .coin-index .index img {
+      display: block;
+      margin: 0 auto; }
+
+#bitcoin {
+  border-left: none; }
+
+.image-container {
+  width: 100%;
+  height: 45%;
+  background: -webkit-linear-gradient(45deg, black, rgba(0, 0, 0, 0.8));
+  display: flex;
+  padding: 2%;
+  justify-content: space-evenly; }
+  .image-container .image {
+    border-left: 5px solid #f2dd2a;
+    height: 100%;
+    width: 30%;
+    float: left;
+    color: white;
+    position: relative;
+    flex-basis: 30%;
+    background: url("http://breakawayexperiences.com/content/images/thumbs/0005641_london-hot-air-balloon-ride.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .image-container .image h1 {
+      margin: 10px; }
+    .image-container .image p {
+      width: 100%;
+      height: 50%;
+      padding: 10px;
+      margin: 0;
+      position: absolute;
+      bottom: 0;
+      background: linear-gradient(bottom, black, rgba(0, 0, 0, 0));
+      background: -webkit-linear-gradient(bottom, black, rgba(0, 0, 0, 0));
+      background: -moz-linear-gradient(bottom, black, rgba(0, 0, 0, 0)); }
+    .image-container .image:before {
+      content: "";
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      transition: 0.2s linear;
+      opacity: 0; }
+    .image-container .image:hover:before {
+      opacity: 1; }
+
+.footer {
+  background: #232222;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+  padding: 5%;
+  padding-bottom: 1%; }
+  .footer hr {
+    width: 80%;
+    margin-top: 40px; }
+  .footer ul {
+    flex-basis: 10%;
+    list-style: none;
+    margin: 10px auto 0 auto;
+    padding: 0; }
+    .footer ul li {
+      display: inline-block;
+      margin-left: 30px; }
+  .footer .flex-container {
+    display: flex;
+    justify-content: center;
+    flex-basis: 90%; }
+    .footer .flex-container div {
+      flex-basis: 30%;
+      text-align: center;
+      border-left: 5px solid #ffeb3b; }
+      .footer .flex-container div ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0; }
+        .footer .flex-container div ul li {
+          font-family: "Raleway", sans-serif;
+          padding: 10px 10px 10px 20px;
+          transition: background 0.3s linear;
+          display: list-item;
+          margin-left: 0; }
+          .footer .flex-container div ul li i {
+            margin-right: 10px; }
+          .footer .flex-container div ul li:hover {
+            background: #ffeb3b;
+            color: black; }
+
+#info {
+  background: #f4f4f4;
+  color: black; }
+
+/*# sourceMappingURL=style.css.map */
