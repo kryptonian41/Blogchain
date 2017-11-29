@@ -95,5 +95,12 @@
 
 .submenu-header {
   border-bottom: 1px solid #ffd740; }
-
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  text-decoration: none;
+  color: rgba(25, 25, 25, 1);
+}
 /*# sourceMappingURL=style.css.map */
