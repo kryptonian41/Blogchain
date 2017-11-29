@@ -1,22 +1,13 @@
-html, body {
-  height: 100%;
-  width: 100%; }
-
-body {
-  background: white;
-  position: relative;
-  margin: 0;
-  padding: 0; }
-
 * {
   box-sizing: border-box; }
 
 .navbar-container {
   color: white;
   position: fixed;
+  z-index: 90;
   width: 100%; }
   .navbar-container > ul {
-    background: black;
+    background: rgba(25, 25, 25, 1);
     padding: 0 20px 0 20px;
     position: relative;
     z-index: 2;
@@ -24,7 +15,7 @@ body {
     margin: 0; }
     .navbar-container > ul > li {
       text-align: center;
-      background: black;
+      background: rgba(25, 25, 25, 1);
       margin: 0;
       padding: 20px;
       display: inline-block;
@@ -61,17 +52,17 @@ body {
         top: 0; }
       .navbar-container > ul > li:hover p {
         top: 20px;
-        color: black; }
+        color: rgba(25, 25, 25, 1); }
       .navbar-container > ul > li:hover span {
         top: 10px;
-        color: black; }
+        color: rgba(25, 25, 25, 1); }
 
 .sub_menu {
   position: absolute;
   display: flex;
   left: 0;
   margin-top: 20px;
-  background: black;
+  background: rgba(25, 25, 25, 1);
   z-index: -2;
   bottom: 100%;
   min-width: 100%;
@@ -83,7 +74,13 @@ body {
     width: auto; }
     .sub_menu > ul > li {
       white-space: nowrap;
-      text-align: center; }
+      text-align: center; 
+      padding: 10px;
+    }
+      .sub_menu > ul > li:hover{
+        background: #ffd740;
+        color: rgba(25, 25, 25, 1);
+      }
 
 .divider {
   width: 2px;
