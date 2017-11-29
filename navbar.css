@@ -1,0 +1,102 @@
+html, body {
+  height: 100%;
+  width: 100%; }
+
+body {
+  background: white;
+  position: relative;
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+.navbar-container {
+  color: white;
+  position: fixed;
+  width: 100%; }
+  .navbar-container > ul {
+    background: black;
+    padding: 0 20px 0 20px;
+    position: relative;
+    z-index: 2;
+    list-style: none;
+    margin: 0; }
+    .navbar-container > ul > li {
+      text-align: center;
+      background: black;
+      margin: 0;
+      padding: 20px;
+      display: inline-block;
+      width: auto;
+      color: white;
+      position: relative;
+      font-family: "Bungee", cursive;
+      height: 110%; }
+      .navbar-container > ul > li p {
+        margin: 0;
+        position: relative;
+        z-index: 2;
+        top: 0;
+        transition: top 0.2s ease-in; }
+      .navbar-container > ul > li span {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: -140%;
+        transition: top 0.2s ease-in; }
+      .navbar-container > ul > li:before {
+        box-sizing: border-box;
+        padding: 20px;
+        position: absolute;
+        background: #ffd740;
+        content: "";
+        top: -130%;
+        left: 0;
+        height: 120%;
+        z-index: 0;
+        width: 100%;
+        transition: top 0.2s ease-in; }
+      .navbar-container > ul > li:hover:before {
+        top: 0; }
+      .navbar-container > ul > li:hover p {
+        top: 20px;
+        color: black; }
+      .navbar-container > ul > li:hover span {
+        top: 10px;
+        color: black; }
+
+.sub_menu {
+  position: absolute;
+  display: flex;
+  left: 0;
+  margin-top: 20px;
+  background: black;
+  z-index: -2;
+  bottom: 100%;
+  min-width: 100%;
+  transition: bottom 0.3s ease-in; }
+  .sub_menu > ul {
+    padding: 20px;
+    list-style: none;
+    flex: 0 1 auto;
+    width: auto; }
+    .sub_menu > ul > li {
+      white-space: nowrap;
+      text-align: center; }
+
+.divider {
+  width: 2px;
+  position: relative; }
+  .divider > div {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: #ffd740; }
+
+.submenu-header {
+  border-bottom: 1px solid #ffd740; }
+
+/*# sourceMappingURL=style.css.map */
