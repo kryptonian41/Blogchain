@@ -13,35 +13,6 @@ body {
   color: white;
   font-size: 16px; }
 
-.navbar-inverse {
-  background-color: #191919;
-  border-color: #080808; }
-
-.dropdown-menu {
-  background: #191919;
-  border-left: 3px solid #f2dd2a; }
-  .dropdown-menu > li > a {
-    color: white;
-    font-size: 16px;
-    transition: background 0.3s ease-in; }
-    .dropdown-menu > li > a:hover {
-      background: #f2dd2a; }
-
-.form-control {
-  background: none;
-  color: white; }
-  .form-control:focus {
-    box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px inset, #f2dd2a 0px 0px 8px;
-    border-color: #f2dd2a;
-    outline: 0px; }
-
-.btn-default {
-  background: none;
-  color: white; }
-  .btn-default:hover {
-    color: black;
-    background: #f2dd2a; }
-
 .discussion-tab {
   text-align: center;
   position: fixed;
@@ -266,5 +237,7 @@ body {
 #info {
   background: #f4f4f4;
   color: black; }
+
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
