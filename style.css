@@ -61,7 +61,7 @@ body {
   width: 100%;
   padding: 5%;
   color: white;
-  background: url("https://cdn.wallpapersafari.com/87/9/mv7wkL.jpg");
+  background: url("src/Front head image/Front head image/blockchain-Digital-Transformation.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
   .landing-container h1 {
@@ -149,7 +149,7 @@ body {
 
 .image-container {
   width: 100%;
-  height: 45%;
+  height: auto;
   background: -webkit-linear-gradient(45deg, black, rgba(0, 0, 0, 0.8));
   display: flex;
   padding: 2%;
@@ -157,6 +157,7 @@ body {
   .image-container .image {
     border-left: 5px solid #f2dd2a;
     height: 100%;
+    min-height: 200px;
     width: 30%;
     float: left;
     color: white;
@@ -238,6 +239,36 @@ body {
   background: #f4f4f4;
   color: black; }
 
+@media (max-width: 768px) {
+  .image-container {
+    flex-direction: column; }
+    .image-container .image {
+      margin-top: 15px;
+      width: 100%;
+      min-height: 170px;
+      border-left: none;
+      border-top: 3px solid #ffeb3b; }
+      .image-container .image h1 {
+        font-size: 30px; }
+
+  .coin-index {
+    flex-direction: column; }
+    .coin-index .index {
+      border-left: none;
+      border-top: 1px solid black; }
+
+  .footer .flex-container {
+    flex-direction: column; }
+    .footer .flex-container div {
+      border-top: 2px solid #ffeb3b;
+      border-left: none; }
+
+  .discussion-tab {
+    display: none; }
+
+  .container-div a {
+    white-space: nowrap;
+    width: auto; } }
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
