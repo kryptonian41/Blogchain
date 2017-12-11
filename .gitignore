@@ -1,4 +1,5 @@
 /.sass-cache
+/public/.sass-cache
 /public/style.css.map
 /public/navbar.css.map
 /public/style.sass
