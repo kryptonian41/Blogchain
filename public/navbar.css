@@ -7,7 +7,7 @@
   z-index: 90;
   width: 100%; }
   .navbar-container > ul {
-    background: rgba(25, 25, 25, 1);
+    background: #191919;
     padding: 0 20px 0 20px;
     position: relative;
     z-index: 2;
@@ -15,7 +15,7 @@
     margin: 0; }
     .navbar-container > ul > li {
       text-align: center;
-      background: rgba(25, 25, 25, 1);
+      background: #191919;
       margin: 0;
       padding: 20px;
       display: inline-block;
@@ -52,17 +52,17 @@
         top: 0; }
       .navbar-container > ul > li:hover p {
         top: 20px;
-        color: rgba(25, 25, 25, 1); }
+        color: #191919; }
       .navbar-container > ul > li:hover span {
         top: 10px;
-        color: rgba(25, 25, 25, 1); }
+        color: #191919; }
 
 .sub_menu {
   position: absolute;
   display: flex;
   left: 0;
   margin-top: 20px;
-  background: rgba(25, 25, 25, 1);
+  background: #191919;
   z-index: -2;
   bottom: 100%;
   min-width: 100%;
@@ -74,13 +74,11 @@
     width: auto; }
     .sub_menu > ul > li {
       white-space: nowrap;
-      text-align: center; 
-      padding: 10px;
-    }
-      .sub_menu > ul > li:hover{
+      text-align: center;
+      padding: 10px; }
+      .sub_menu > ul > li:hover {
         background: #ffd740;
-        color: rgba(25, 25, 25, 1);
-      }
+        color: #191919; }
 
 .divider {
   width: 2px;
@@ -95,12 +93,14 @@
 
 .submenu-header {
   border-bottom: 1px solid #ffd740; }
-a{
+
+a {
   text-decoration: none;
-  color: white;
-}
-a:hover{
-  text-decoration: none;
-  color: rgba(25, 25, 25, 1);
-}
+  color: white; }
+  a:hover {
+    text-decoration: none;
+    color: #191919; }
+
 /*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=navbar.css.map */

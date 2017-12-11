@@ -4,6 +4,7 @@ $(document).ready(function() {
     function() {
       // over
       // console.log("mouse in");
+      hover = true;
       var height = $(this).children('.sub_menu').innerHeight();
       // console.log(height);
       height = height * -1;
@@ -16,7 +17,7 @@ $(document).ready(function() {
     function() {
       // out
       // console.log("mouse out");
-      if(!hover){
+      if(hover){
         var prop = {
           bottom: '100%',
           zIndex: -2

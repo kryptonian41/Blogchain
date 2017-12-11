@@ -113,7 +113,8 @@ body {
     color: white;
     display: block;
     margin: 0 auto;
-    width: 15%;
+    min-width: 15%;
+    max-width: 30%;
     text-decoration: none;
     outline: none;
     border: 2px solid white;
@@ -251,6 +252,8 @@ body {
       border-top: 3px solid #ffeb3b; }
       .image-container .image h1 {
         font-size: 30px; }
+      .image-container .image p {
+        font-size: 14px; }
 
   .coin-index {
     flex-direction: column; }
@@ -281,6 +284,8 @@ body {
     padding: 20px; }
     .container-div a {
       white-space: nowrap;
+      min-width: none;
+      max-width: none;
       width: auto; } }
 /*# sourceMappingURL=style.css.map */
 

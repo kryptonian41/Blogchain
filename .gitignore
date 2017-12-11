@@ -1,4 +1,7 @@
 /.sass-cache
-style.css.map
-style.sass
-navbar.sass
+/public/style.css.map
+/public/navbar.css.map
+/public/style.sass
+/public/navbar.sass
+/node_modules
+/content
