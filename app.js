@@ -12,7 +12,7 @@ app.use(express.static("content"));
 app.engine('html', ejs.renderFile);  
 // routing
 app.get("/", function(req, res) {
-  res.render("index.html");
+  res.render("index");
 });
 
 
