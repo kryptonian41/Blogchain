@@ -159,7 +159,8 @@ body {
   .infographic > h1 {
     font-family: "Raleway", sans-serif;
     color: white;
-    text-align: center; }
+    text-align: center;
+    text-shadow: 0px 1px 1px #ffebee; }
   .infographic > img {
     display: block;
     position: relative;
@@ -171,7 +172,8 @@ body {
     width: 70%;
     font-size: 25px;
     margin: 10px auto;
-    text-align: center; }
+    text-align: center;
+    text-shadow: 0px 1px 1px #ffebee; }
   .infographic hr {
     width: 70%;
     background: white;
