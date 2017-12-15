@@ -1,15 +1,16 @@
-html, body {
-  height: 100%;
-  width: 100%; }
+html {
+  height: 100%; }
 
 * {
   box-sizing: border-box; }
 
 body {
+  min-height: 100%;
+  width: 100%;
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
-  position: realative;
+  position: relative;
   color: white;
   font-size: 16px; }
 
@@ -27,7 +28,7 @@ body {
   z-index: 5;
   background: #1a1919;
   transition: 0.4s linear, bottom 0.7s ease-in; }
-  .discussion-tab h3 {
+  .discussion-tab h4 {
     margin: 0; }
   .discussion-tab p {
     opacity: 0; }
@@ -42,19 +43,40 @@ body {
 
 @keyframes slide-in-left {
   from {
+    display: block;
     left: -30%; }
   to {
     left: 0; } }
 @keyframes slide-in-right {
   from {
-    left: 20%; }
+    left: 30%; }
   to {
     left: 0; } }
+@keyframes slide-down {
+  from {
+    top: -30%; }
+  to {
+    top: 0; } }
 @keyframes fade-in {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
+.slide-down {
+  animation: fade-in 0.7s linear, slide-down 0.5s linear;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards; }
+
+.slidel {
+  animation: slide-in-left 0.5s linear, fade-in 0.7s linear;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards; }
+
+.slider {
+  animation: fade-in 1s linear, slide-in-right 0.5s linear;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards; }
+
 .landing-container {
   height: 90vh;
   position: relative;
@@ -64,23 +86,27 @@ body {
   background: url("Front head image/Front head image/blockchain-Digital-Transformation.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
-  .landing-container h1 {
+  .landing-container > h1 {
     font-family: "Raleway", sans-serif;
     font-size: 100px;
     position: relative;
     z-index: 2;
     font-weight: 300;
-    animation: slide-in-left 0.5s linear, fade-in 0.7s linear;
-    animation-delay: 0.5s;
-    margin-top: 8%; }
-  .landing-container p {
-    animation: fade-in 1s linear, slide-in-right 0.5s linear;
-    animation-delay: 0.4s;
+    margin-top: 6%;
+    margin-bottom: 3%;
+    display: block;
+    left: -60%;
+    opacity: 0; }
+  .landing-container > p {
+    display: block;
     position: relative;
-    z-index: 1;
+    opacity: 0;
+    left: 20%;
+    z-index: 2;
     font-size: 30px;
     font-weight: 300;
-    width: 60%; }
+    width: 60%;
+    white-space: normal; }
   .landing-container:before {
     content: "";
     z-index: 1;
@@ -90,6 +116,66 @@ body {
     height: 100%;
     width: 100%;
     background: -webkit-linear-gradient(bottom, #1a1919, rgba(25, 25, 25, 0.2)); }
+  .landing-container > .member-container {
+    width: 20%;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 4%;
+    top: -100%;
+    overflow: hidden;
+    display: none; }
+    .landing-container > .member-container > .member-image {
+      display: block;
+      max-width: 100%;
+      border-radius: 50%;
+      border: 3px solid #f2dd2a; }
+    .landing-container > .member-container > .member-name {
+      text-align: center;
+      color: white;
+      font-size: 25px; }
+
+.infographic {
+  width: 100%;
+  padding: 10px;
+  position: relative; }
+  .infographic::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -4;
+    background: rgba(18, 18, 18, 0.66); }
+  .infographic > .backfall {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -6; }
+  .infographic > h1 {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    text-align: center; }
+  .infographic > img {
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 100%; }
+  .infographic > .content {
+    width: 70%;
+    font-size: 25px;
+    margin: 10px auto;
+    text-align: center; }
+  .infographic hr {
+    width: 70%;
+    background: white;
+    height: 1px; }
 
 .container-div {
   font-family: "Raleway", sans-serif;
@@ -196,6 +282,9 @@ body {
 .footer {
   background: #232222;
   display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
   flex-direction: column;
   justify-content: space-evenly;
   color: white;
@@ -230,11 +319,17 @@ body {
           transition: background 0.3s linear;
           display: list-item;
           margin-left: 0; }
+          .footer .flex-container div ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.2s linear; }
           .footer .flex-container div ul li i {
             margin-right: 10px; }
           .footer .flex-container div ul li:hover {
             background: #ffeb3b;
             color: black; }
+            .footer .flex-container div ul li:hover > a {
+              color: black; }
 
 #info {
   background: #f4f4f4;
@@ -286,7 +381,16 @@ body {
       white-space: nowrap;
       min-width: none;
       max-width: none;
-      width: auto; } }
+      width: auto; }
+    .container-div .bar {
+      width: 90%; }
+
+  .landing-container > p {
+    width: 100%;
+    font-size: 25px; }
+
+  .infographic > .content {
+    width: 90%; } }
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
