@@ -1,9 +1,9 @@
 $(document).ready(function() {
-  var hover;
+  var hover,flag=0;
   $(".navbar-container ul li").hover(
     function() {
       // over
-      // console.log("mouse in");
+      console.log("mouse in");
       hover = true;
       var height = $(this)
         .children(".sub_menu")
@@ -20,7 +20,8 @@ $(document).ready(function() {
     },
     function() {
       // out
-      // console.log("mouse out");
+      console.log("mouse out");
+      flag=1;
       if (hover) {
         var prop = {
           bottom: "100%",
@@ -35,21 +36,20 @@ $(document).ready(function() {
   $(".sub_menu").hover(
     function() {
       // over
-      // hover = true;
-      console.log("mouse in");
+      // hover = false;
+      console.log("mouse in submenu");
     },
     function() {
       // out
-      console.log("mouse out");
-
-      if (hover) {
+      console.log("mouse out submenu");
+      // hover = true;      
+      if (!hover && flag==1) {
         var prop = {
           bottom: "100%",
           zIndex: -2
         };
         $(this).css(prop);
       }
-      hover = false;
     }
   );
 });
