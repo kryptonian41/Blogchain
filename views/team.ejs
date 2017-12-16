@@ -1,12 +1,24 @@
 <% include partials/header %>
+
   <div class="landing-container">
-    <% member_list.forEach(function(member){ %>
       <div class="member-container">
-        <img class="member-image" src="<%=member.url%>">
+        <img class="member-image" src="member_image.png">
         <p class="member-name">
-          <%= member.name %>
+          Name
         </p>
       </div>
-      <% }) %>
+      <div class="member-container">
+        <img class="member-image" src="member_image.png">
+        <p class="member-name">
+          Name
+        </p>
+      </div>
+      <div class="member-container">
+        <img class="member-image" src="member_image.png">
+        <p class="member-name">
+          Name
+        </p>
+      </div>
   </div>
+
   <% include partials/footer %>

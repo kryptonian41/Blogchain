@@ -4,7 +4,7 @@ var bodyParser = require("body-parser");
 var ejs = require("ejs");
 var mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost/Blogchain");
+// mongoose.connect("mongodb://localhost/Blogchain");
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
@@ -13,12 +13,12 @@ app.use(express.static("content"));
 app.engine("html", ejs.renderFile);
 
 // member schema
-var member_schema = mongoose.Schema({
-  name: String,
-  url: String
-});
+// var member_schema = mongoose.Schema({
+//   name: String,
+//   url: String
+// });
 
-var member_list = mongoose.model("member_list", member_schema);
+// var member_list = mongoose.model("member_list", member_schema);
 
 // routing
 app.get("/", function(req, res) {
@@ -42,10 +42,11 @@ app.get("/etherium", function(req, res) {
 });
 
 app.get("/team", function(req, res) {
-  member_list.find({}, function(err, members) {
-    if(!err)
-      res.render("team", { member_list: members });
-  });
+  // member_list.find({}, function(err, members) {
+  //   if(!err)
+  //     res.render("team", { member_list: members });
+  // });
+  res.render("team");
 });
 // listening port declaration
 app.listen(3000, function() {
