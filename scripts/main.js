@@ -2,12 +2,12 @@ $(document).ready(function() {
   console.log("document is ready");
   // for aligning the footer at the right place when the page resizes
   var footerHeight = $(".footer").innerHeight();
-  $("body").css("padding-bottom", footerHeight);
+  $("body").css("padding-bottom", footerHeight-3);
   $(window).on("resize", function() {
     // console.log("resize!!");
     footerHeight = $(".footer").innerHeight();
     console.log(footerHeight);
-    $("body").css("padding-bottom", footerHeight - 1);
+    $("body").css("padding-bottom", footerHeight-3);
   });
 
   // for landing container animation
