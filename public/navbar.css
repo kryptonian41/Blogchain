@@ -7,22 +7,22 @@
   z-index: 90;
   width: 100%; }
   .navbar-container > ul {
-    background: #191919;
+    background: #1a1919;
     padding: 0 20px 0 20px;
     position: relative;
-    z-index: 2;
     list-style: none;
     margin: 0; }
     .navbar-container > ul > li {
       text-align: center;
-      background: #191919;
+      background: #1a1919;
       margin: 0;
-      padding: 20px;
+      padding: 18px;
       display: inline-block;
       width: auto;
       color: white;
       position: relative;
-      font-family: "Bungee", cursive;
+      z-index: 2;
+      font-family: "Open Sans", sans-serif;
       height: 110%; }
       .navbar-container > ul > li p {
         margin: 0;
@@ -32,16 +32,17 @@
         transition: top 0.2s ease-in; }
       .navbar-container > ul > li span {
         position: absolute;
+        z-index: 2;
         left: 50%;
         transform: translate(-50%, 0);
         top: -140%;
         transition: top 0.2s ease-in;
-        color: #191919; }
+        color: white; }
       .navbar-container > ul > li:before {
         box-sizing: border-box;
         padding: 20px;
         position: absolute;
-        background: #ffd740;
+        background: #2B3035;
         content: "";
         top: -130%;
         left: 0;
@@ -50,25 +51,30 @@
         width: 100%;
         transition: top 0.2s ease-in; }
       .navbar-container > ul > li:hover:before {
-        top: 0; }
+        top: 0;
+        color: white; }
       .navbar-container > ul > li:hover p {
         top: 20px;
-        color: #191919; }
+        color: white; }
         .navbar-container > ul > li:hover p > a {
-          color: #191919; }
+          color: white; }
       .navbar-container > ul > li:hover span {
         top: 10px; }
+      .navbar-container > ul > li:hover > .sub_menu {
+        visibility: visible;
+        opacity: 1;
+        transition-delay: 0s; }
 
 .sub_menu {
   position: absolute;
   display: flex;
   left: 0;
   margin-top: 20px;
-  background: #191919;
-  z-index: -2;
-  bottom: 100%;
+  background: #2B3035;
+  visibility: hidden;
+  opacity: 0;
   min-width: 100%;
-  transition: bottom 0.3s ease-in; }
+  transition: opacity 0.3s ease-in, visibility 0s linear 0.3s; }
   .sub_menu > ul {
     padding: 20px;
     list-style: none;
@@ -79,9 +85,9 @@
       text-align: center;
       padding: 10px; }
       .sub_menu > ul > li:hover {
-        background: #ffd740; }
+        background: #1a1919; }
         .sub_menu > ul > li:hover > a {
-          color: #191919; }
+          color: white; }
 
 .divider {
   width: 2px;
@@ -92,10 +98,10 @@
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    background: #ffd740; }
+    background: #f2dd2a; }
 
 .submenu-header {
-  border-bottom: 1px solid #ffd740; }
+  border-bottom: 1px solid #f2dd2a; }
 
 a {
   text-decoration: none;
