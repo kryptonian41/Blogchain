@@ -37,8 +37,8 @@ app.get("/blockchain", function(req, res) {
   res.render("blockchain");
 });
 
-app.get("/etherium", function(req, res) {
-  res.render("etherium");
+app.get("/ethereum", function(req, res) {
+  res.render("ethereum");
 });
 
 app.get("/team", function(req, res) {

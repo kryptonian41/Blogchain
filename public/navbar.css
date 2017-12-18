@@ -79,8 +79,7 @@
   .sub_menu > ul {
     padding: 20px;
     list-style: none;
-    flex: 0 1 auto;
-    width: auto; }
+    flex: 1; }
     .sub_menu > ul > li {
       white-space: nowrap;
       text-align: center;
